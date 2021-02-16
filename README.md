@@ -1,14 +1,14 @@
 # Bert Extractive Summarizer
 
+** This fork removes neuralcoref CoreferenceHandler **
+
 [![Build Status](https://travis-ci.com/dmmiller612/bert-extractive-summarizer.svg?branch=master)](https://travis-ci.com/github/dmmiller612/bert-extractive-summarizer)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/dmmiller612/bert-extractive-summarizer)
 <img src="https://img.shields.io/pypi/v/bert-extractive-summarizer.svg" />
 
 This repo is the generalization of the lecture-summarizer repo. This tool utilizes the HuggingFace Pytorch transformers library
 to run extractive summarizations. This works by first embedding the sentences, then running a clustering algorithm, finding 
-the sentences that are closest to the cluster's centroids. This library also uses coreference techniques, utilizing the 
-https://github.com/huggingface/neuralcoref library to resolve words in summaries that need more context. The greedyness of 
-the neuralcoref library can be tweaked in the CoreferenceHandler class.
+the sentences that are closest to the cluster's centroids.
 
 Paper: https://arxiv.org/abs/1906.04165
 
