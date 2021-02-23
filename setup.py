@@ -2,7 +2,7 @@ from setuptools import setup
 from setuptools import find_packages
 
 setup(name='bert-extractive-summarizer',
-      version='0.6.1',
+      version='0.6.1-spacy3',
       description='Extractive Text Summarization with BERT',
       keywords = ['bert', 'pytorch', 'machine learning', 'deep learning', 'extractive summarization', 'summary'],
       long_description=open("README.md", "r", encoding='utf-8').read(),
